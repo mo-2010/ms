@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>محمد صالح زارع | شبكات وأمن سيبراني</title>
+  <meta name="description" content="محمد صالح زارع — مختص شبكات وأمن سيبراني. صاحب اكتشاف ثغرة في فيسبوك عام 2024.">
+  <style>
+    :root{
+      --bg:#0b0b0b;
+      --fg:#e7e7e7;
+      --muted:#b7b7b7;
+      --card:#121212;
+      --line:#1f1f1f;
+      --accent:#00e0c7;
+      --radius:18px;
+      --pad:18px;
+      --max:1100px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Naskh Arabic UI", "Noto Sans Arabic", "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      line-height:1.7;
+    }
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    header{
+      border-bottom:1px solid var(--line);
+      position:sticky;top:0;background:rgba(11,11,11,.8);backdrop-filter: blur(8px);z-index:10
+    }
+    .wrap{max-width:var(--max);margin:auto;padding:0 var(--pad)}
+    .nav{
+      display:flex;align-items:center;justify-content:space-between;gap:10px;padding:14px 0;
+    }
+    .brand{display:flex;align-items:center;gap:10px}
+    .dot{width:10px;height:10px;border-radius:50%;background:var(--accent);box-shadow:0 0 18px var(--accent)}
+    .brand h1{font-size:18px;margin:0;font-weight:700;letter-spacing:.3px}
+    .links a{margin-inline:10px;color:var(--fg)}
+    main{padding:36px 0 80px}
+    section{padding:24px 0;border-bottom:1px solid var(--line)}
+    .hero{
+      display:grid;grid-template-columns:1.2fr .8fr;gap:24px;align-items:center;padding-top:10px
+    }
+    .card{
+      background:var(--card);border:1px solid var(--line);padding:calc(var(--pad) + 2px);
+      border-radius:var(--radius);box-shadow:0 8px 30px rgba(0,0,0,.25)
+    }
+    h2{margin:0 0 12px 0;font-size:22px}
+    .lead{font-size:18px;color:var(--muted);margin:8px 0 0}
+    .tag{
+      display:inline-block;border:1px solid var(--line);padding:6px 10px;border-radius:999px;
+      margin:6px 6px 0 0;color:var(--muted);font-size:14px
+    }
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .row{display:flex;gap:12px;flex-wrap:wrap}
+    .muted{color:var(--muted)}
+    .kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+    .kpi{padding:16px;border:1px solid var(--line);border-radius:14px;background:#0f0f0f}
+    .kpi b{display:block;font-size:22px;margin-bottom:4px;color:var(--accent)}
+    .timeline{display:grid;gap:12px}
+    .tl-item{padding:14px;border:1px solid var(--line);border-radius:14px;background:#0f0f0f}
+    .small{font-size:13px;color:var(--muted)}
+    footer{padding:28px 0;color:var(--muted)}
+    code{font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;}
+    @media (max-width:980px){
+      .hero{grid-template-columns:1fr}
+      .grid{grid-template-columns:1fr 1fr}
+      .kpis{grid-template-columns:1fr 1fr}
+    }
+    @media (max-width:640px){
+      .grid{grid-template-columns:1fr}
+      .kpis{grid-template-columns:1fr}
+      .links{display:none}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <div class="brand">
+        <span class="dot" aria-hidden="true"></span>
+        <h1>محمد صالح زارع</h1>
+      </div>
+      <nav class="links" aria-label="روابط أساسية">
+        <a href="#about">من أنا</a>
+        <a href="#skills">مهارات</a>
+        <a href="#work">أعمال</a>
+        <a href="#latest">آخر أعمالي</a>
+        <a href="#research">أمن سيبراني</a>
+        <a href="#contact">تواصل</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <!-- البطل -->
+    <section id="about" class="hero">
+      <div class="card">
+        <h2>مختص شبكات وأمن سيبراني</h2>
+        <p class="lead">
+                أعمل على مراقبة شبكات واختبار الشبكات   
+        </p>
+        <div class="row" style="margin-top:10px">
+          <span class="tag">Routing & Switching</span>
+          <span class="tag">Linux & Scripting</span>
+          <span class="tag">Web Security</span>
+          <span class="tag">Incident Response</span>
+          <span class="tag">SIEM & Log Analysis</span>
+        </div>
+      </div>
+      <div class="kpis">
+        <div class="kpi">
+          <b>3 سنوات</b>
+          خبرة عملية في الشبكات والأمن
+        </div>
+        <div class="kpi">
+          <b>2024</b>
+           اكتشاف ثغرة في <span dir="ltr">Facebook</span> 
+        </div>
+        <div class="kpi">
+          <b>0</b>
+          
+        </div>
+      </div>
+    </section>
+
+    
+    <section id="skills">
+      <h2>مهاراتي التقنية</h2>
+      <div class="grid">
+        <div class="card">
+          <b>الشبكات</b>
+          <p class="muted">تصميم الشبكات، تقسيم الشبكات VLAN، جدران نارية، QoS، ومراقبة الأداء.</p>
+          <ul>
+            <li>إعداد راوترات وسويتشات </li>
+            <li>VPN (IPsec, OpenVPN, WireGuard)</li>
+            <li>تحصين الأجهزة وفق أفضل الممارسات</li>
+          </ul>
+        </div>
+        <div class="card">
+          <b>الأمن السيبراني</b>
+          <p class="muted">اختبارات اختراق أخلاقية، إدارة ثغرات، وتدقيق إعدادات.</p>
+          <ul>
+            <li>فحص تطبيقات الويب وواجهات API</li>
+            <li>تحليل سجلات SIEM والاستجابة للحوادث</li>
+            
+          </ul>
+        </div>
+        <div class="card">
+          <b>الأتمتة والدعم</b>
+          <p class="muted">أتمتة مهام الشبكات والأمن لخفض الأخطاء البشرية.</p>
+          <ul>
+            <li>Bash / Python لأتمتة الفحوصات</li>
+            <li>توثيق وبناء إجراءات تشغيل قياسية</li>
+            <li>مراجعة صلاحيات وحوكمة الوصول</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    
+    <section id="work">
+      <h2>أعمال مختارة</h2>
+      <div class="grid">
+        <div class="card">
+          <b>تقوية شبكة مؤسسة متوسطة</b>
+          <p class="muted">إعادة تصميم التقسيم الشبكي مع سياسات فصل وإدارة وصول دقيقة.</p>
+        </div>
+        <div class="card">
+          <b>مراجعة أمان تطبيق ويب</b>
+          <p class="muted">اختبار اختراق تطبيقي ومعالجة ثغرات حقن وتجاوز صلاحيات.</p>
+        </div>
+        <div class="card">
+          <b>أتمتة فحص الثغرات</b>
+          <p class="muted">بناء سكربتات دورية لالتقاط تغيّرات التهيئة وإرسال تقارير.</p>
+        </div>
+      </div>
+    </section>
+
+   
+    <section id="latest">
+      <h2>آخر أعمالي</h2>
+      <div class="grid">
+        <div class="card">
+          </b>انشاء اداة فحص يوزرات لموقع انستغرام باستخدام خوارزميات الذكاء الاصطناعي </b>
+          <p class="muted"> .</p>
+        </div>
+        <div class="card">
+          </b>إعداد جدران حماية في اجهزه المراقبه مثل DVR</b>
+          <p class="muted"></p>
+        </div>
+        <div class="card">
+          </b></b>
+          <p class="muted"></p>
+        </div>
+      </div>
+    </section>
+
+    
+    <section id="research">
+      <h2>مذكرة تقنية: اكتشاف ثغرة في فيسبوك (2024)</h2>
+      <h3>وهي كانت نشر منشورات اكثر من قروب فيسبوك بسبب خطا في API</h3>
+         
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>تواصل</h2>
+      <div class="card">
+        <p class="muted">متاح للتعاون والاستشارات.</p>
+        <ul>
+          <li>البريد: <a href="elecfronic@outlook.com">elecfronic@outlook.com</a></li>
+          <li>تيليغرام: <a href="https://t.me/msz_501" target="_blank">t.me/msz_sec</a></li>
+          <li>لينكدإن: <a href="https://www.linkedin.com/in/msz-ar/" target="_blank">/in/msz-sec</a></li>
+          <li>جيتهاب: <a href="https://github.com/mo-2010" target="_blank">github.com/msz-sec</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <span class="small">© <span id="y"></span> محمد صالح زارع. جميع الحقوق محفوظة.</span>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+    const links=[...document.querySelectorAll('.links a')];
+    const obs=new IntersectionObserver(entries=>{
+      entries.forEach(e=>{
+        if(e.isIntersecting){
+          links.forEach(a=>a.style.opacity='0.6');
+          const id=e.target.id;
+          const active=document.querySelector(`.links a[href="#${id}"]`);
+          if(active) active.style.opacity='1';
+        }
+      });
+    },{rootMargin:"-40% 0px -55% 0px",threshold:0});
+    document.querySelectorAll('main section').forEach(s=>obs.observe(s));
+  </script>
+</body>
+</html>
