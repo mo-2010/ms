@@ -4,59 +4,39 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>محمد صالح زارع | شبكات وأمن سيبراني</title>
-<meta name="description" content="محمد صالح زارع — مختص شبكات وأمن سيبراني. صاحب اكتشاف ثغرة في فيسبوك عام 2024.">
-   <link rel="icon" href="logo wibsite.png" type="image/png">
-  <style>
-    :root{
-      --bg:#0b0b0b; --fg:#e7e7e7; --muted:#b7b7b7; --card:#121212; --line:#1f1f1f;
-      --accent:#00e0c7; --radius:18px; --pad:18px; --max:1100px;
-    }
-    *{box-sizing:border-box;margin:0;padding:0}
-    body{
-      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans Arabic", sans-serif;
-      background: var(--bg); color: var(--fg); line-height:1.7;
-    }
-    a{color:var(--accent);text-decoration:none}
-    a:hover{text-decoration:underline}
-    header{border-bottom:1px solid var(--line);position:sticky;top:0;background:rgba(11,11,11,.8);backdrop-filter: blur(8px);z-index:10}
-    .wrap{max-width:var(--max);margin:auto;padding:0 var(--pad)}
-    .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
-    .brand{display:flex;align-items:center;gap:10px}
-    .dot{width:10px;height:10px;border-radius:50%;background:var(--accent);box-shadow:0 0 12px var(--accent)}
-    .brand h1{font-size:18px;font-weight:700}
-    .links a{margin-inline:10px;color:var(--fg)}
-    main{padding:36px 0 60px}
-    section{padding:24px 0;border-bottom:1px solid var(--line)}
-    h2{margin-bottom:12px;font-size:22px}
-    .card{background:var(--card);border:1px solid var(--line);padding:var(--pad);border-radius:var(--radius);box-shadow:0 4px 16px rgba(0,0,0,.25)}
-    .lead{font-size:17px;color:var(--muted)}
-    .tag{display:inline-block;border:1px solid var(--line);padding:5px 10px;border-radius:999px;margin:5px;color:var(--muted);font-size:14px}
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
-    .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin-top:12px}
-    .kpi{padding:14px;border:1px solid var(--line);border-radius:14px;background:#0f0f0f;text-align:center}
-    .kpi b{display:block;font-size:20px;margin-bottom:4px;color:var(--accent)}
-    .muted{color:var(--muted)}
-    footer{padding:28px 0;color:var(--muted);text-align:center}
-    @media(max-width:640px){.links{display:none}}
-  </style>
+  <meta name="description" content="محمد صالح زارع — مختص شبكات وأمن سيبراني. صاحب اكتشاف ثغرة في فيسبوك عام 2024.">
+  <link rel="icon" href="logo wibsite.png" type="image/png">
+  <link rel="preload" href="styles.css" as="style">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  
+  <div id="loader" aria-hidden="true"><div class="spinner" role="status" aria-label="Loading"></div></div>
+
+
+  <div id="particles" aria-hidden="true"></div>
+
   <header>
     <div class="wrap nav">
-      <div class="brand"><span class="dot"></span><h1>محمد صالح زارع</h1></div>
-      <nav class="links">
-        <a href="#about">من أنا</a>
-        <a href="#skills">مهارات</a>
-        <a href="#work">أعمال</a>
-        <a href="#latest">آخر أعمال</a>
-        <a href="#research">أبحاث</a>
-        <a href="#contact">تواصل</a>
-      </nav>
+      <div class="brand">
+        <span class="dot" aria-hidden="true"></span>
+        <h1 id="title" class="typing">محمد صالح زارع</h1>
+      </div>
+      <div style="display:flex;align-items:center">
+        <button id="themeToggle" aria-label="تبديل الثيم">🌙</button>
+        <nav class="links" aria-label="روابط التصفح">
+          <a href="#about">من أنا</a>
+          <a href="#skills">مهارات</a>
+          <a href="#work">أعمال</a>
+          <a href="#latest">آخر أعمال</a>
+          <a href="#research">أبحاث</a>
+          <a href="#contact">تواصل</a>
+        </nav>
+      </div>
     </div>
   </header>
 
   <main class="wrap">
-    <!-- عني -->
     <section id="about">
       <div class="card">
         <h2>مختص شبكات وأمن سيبراني</h2>
@@ -75,7 +55,6 @@
       </div>
     </section>
 
-    <!-- مهارات -->
     <section id="skills">
       <h2>مهارات تقنية</h2>
       <div class="grid">
@@ -85,7 +64,6 @@
       </div>
     </section>
 
-    <!-- أعمال -->
     <section id="work">
       <h2>أعمال مختارة</h2>
       <div class="grid">
@@ -95,7 +73,6 @@
       </div>
     </section>
 
-    <!-- آخر أعمال -->
     <section id="latest">
       <h2>آخر أعمال</h2>
       <div class="grid">
@@ -104,7 +81,6 @@
       </div>
     </section>
 
-    <!-- أبحاث -->
     <section id="research">
       <h2>أبحاث أمنية</h2>
       <div class="grid">
@@ -113,18 +89,16 @@
       </div>
     </section>
 
-    <!-- تواصل -->
     <section id="contact">
       <h2>تواصل</h2>
       <div class="card">
         <p class="muted">متاح للتعاون والاستشارات.</p>
         <ul>
-            
-          <li><h4>  E-mail : info@msz-ar.shop <h4> </li>
-          <li>💬 <a href="https://t.me/msz_501" target="_blank">telegram</a></li>
-          <li>🔗 <a href="https://www.linkedin.com/in/msz-ar/" target="_blank">LinkedIn</a></li>
-          <li>💻 <a href="https://github.com/mo-2010" target="_blank">GitHub</a></li>
-          <li>💰 <a href="http://www.paypal.me/MohammadZare122" target="_blank">PayPal</a></li>
+          <li><h4>E-mail : info@msz-ar.shop</h4></li>
+          <li>💬 <a href="https://t.me/msz_501" target="_blank" rel="noopener">Telegram</a></li>
+          <li>🔗 <a href="https://www.linkedin.com/in/msz-ar/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li>💻 <a href="https://github.com/mo-2010" target="_blank" rel="noopener">GitHub</a></li>
+          <li>💰 <a href="http://www.paypal.me/MohammadZare122" target="_blank" rel="noopener">PayPal</a></li>
         </ul>
       </div>
     </section>
@@ -136,8 +110,8 @@
     </div>
   </footer>
 
-  <script>
-    document.getElementById('y').textContent = new Date().getFullYear();
-  </script>
+  <button id="topBtn" aria-label="الرجوع للأعلى">↑</button>
+
+  <script defer src="main.js"></script>
 </body>
 </html>
